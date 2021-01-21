@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
     // read geometry from a file; by default read from h2o.xyz, else take filename (.xyz) from the command line
     const auto filename = (argc > 1) ? argv[1] : "h2o.xyz";
     std::vector<libint2::Atom> atoms = read_geometry(filename);
-	const auto basisname = (argc > 2) ? argv[2] : "aug-cc-pVDZ";
+	const auto basisname = (argc > 2) ? argv[2] : "STO-3g"; //aug-cc-pVDZ
 
     // count the number of electrons
     auto nelectron = 0;
